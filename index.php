@@ -1,3 +1,3 @@
 <?php
-	echo "Hi";
+	print_r($_GET["hub_challenge"]);
 ?>
