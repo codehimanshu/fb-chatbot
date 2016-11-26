@@ -1,5 +1,7 @@
 <?php
-print_r($_ENV);
+print_r($_ENV)."<br>";
+echo getenv('token')."<br>";
+echo $_SERVER['token']."<br>";
 $accessToken = "EAASb5TsHYK8BABHqcIhdCEQKrCvQGm7d8EV3HaurBmQC6MPNq2ZB0DlvMXWVdnS45N9ZAwbUiJwtqWeLILjHIPSjTdVr7JdNTQc3iLCFFIla9t4iBpOO8F79kmx53IGLzslGgx38uftM0wqNPCsJcG7O3tNVJXv2rtUHUkJwZDZD";
 $input = json_decode(file_get_contents('php://input'), true);
 $senderId = $input['entry'][0]['messaging'][0]['sender']['id'];
